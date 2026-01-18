@@ -3,6 +3,7 @@ import { FiMapPin, FiStar, FiTrash2, FiHeart } from 'react-icons/fi'
 import { useSaved } from '../contexts/SavedContext'
 import restaurantsData from '../data/restaurants.json'
 import RestaurantDetail from '../components/RestaurantDetail'
+import KakaoAd from '../components/KakaoAd'
 
 export default function SavedPage() {
   const { saved, removeFromSaved, saveRestaurant, passRestaurant } = useSaved()
@@ -69,6 +70,11 @@ export default function SavedPage() {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* 광고 */}
+      <div className="ad-section">
+        <KakaoAd />
       </div>
 
       <RestaurantDetail

@@ -3,6 +3,7 @@ import { FiMapPin, FiStar, FiRefreshCw, FiHeart, FiNavigation, FiChevronDown, Fi
 import { useSaved } from '../contexts/SavedContext'
 import restaurantsData from '../data/restaurants.json'
 import RestaurantDetail from '../components/RestaurantDetail'
+import KakaoAd from '../components/KakaoAd'
 import { filterByDistance, formatDistance, findNearestLocation, getSelectableLocations } from '../utils/locationUtils'
 
 const CATEGORIES = ['전체', '한식', '양식', '일식', '중식', '카페', '고기']
@@ -278,6 +279,11 @@ export default function RandomPage() {
              '랜덤 맛집 뽑기'}
           </span>
         </button>
+
+        {/* 광고 */}
+        <div className="ad-section">
+          <KakaoAd />
+        </div>
       </div>
 
       {/* 위치 선택 모달 */}

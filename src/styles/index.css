@@ -53,6 +53,22 @@ body {
 }
 
 /* ========================================
+   Ad Section
+======================================== */
+.ad-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px 16px;
+  margin-top: 16px;
+}
+
+.kakao-ad-container {
+  background: var(--bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* ========================================
    Bottom Navigation
 ======================================== */
 .bottom-nav {

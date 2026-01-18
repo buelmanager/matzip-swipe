@@ -3,6 +3,7 @@ import { FiSliders } from 'react-icons/fi'
 import CardStack from '../components/CardStack'
 import FilterModal from '../components/FilterModal'
 import RestaurantDetail from '../components/RestaurantDetail'
+import KakaoAd from '../components/KakaoAd'
 import { useSaved } from '../contexts/SavedContext'
 import restaurantsData from '../data/restaurants.json'
 
@@ -98,6 +99,11 @@ export default function ExplorePage() {
           restaurants={filteredRestaurants}
           onCardTap={handleCardTap}
         />
+      </div>
+
+      {/* 광고 */}
+      <div className="ad-section">
+        <KakaoAd />
       </div>
 
       <FilterModal
